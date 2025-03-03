@@ -140,7 +140,12 @@ html {
   background-size: 400% 400%;
 }
 
-.css-1ms7hib-MuiTimelineItem-root::before {
+/* .css-1ms7hib-MuiTimelineItem-root::before {
+  content: none !important;
+  padding: 0 !important;
+  flex: 0 !important;
+} */
+.MuiTimelineItem-root::before {
   content: none !important;
   padding: 0 !important;
   flex: 0 !important;
