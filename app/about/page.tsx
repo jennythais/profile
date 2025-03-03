@@ -8,16 +8,15 @@ export default function AboutPage() {
       <section className="py-10 md:py-16 bg-white">
         <div className="container px-4 md:px-6">
           <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8 text-center text-[#694a08]">About Me</h1>
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto text-base md:text-lg">
             <p className="text-muted-foreground mb-6">
-              A passionate HR expert with a strong can-do attitude, proficient across the full HR spectrum, with a focus on
-              Compensation & Benefits (C&B), Employee Experience, and Employee Relations. Dedicated to maintaining HR
-              excellence, driving business impact, and strengthening the people-business relationship.
+              From drawing on years of HR operations experience to becoming a People Business Partner, I focus on performance management, organization development, maintaining HR excellence, enhancing employee experiences, and strengthening the people-business relationship.
             </p>
             <p className="text-muted-foreground mb-6">
-              I have a solid grasp of labor laws and am dedicated to enhancing employee engagement and organizational
-              growth. Specialize in Compensation & Benefits, Budgeting & Planning, Cost Management, HR Policy
-              Development, Labor Law, HR Data Analysis, and Payroll Management.
+              Specialize in Budgeting & Planning, Cost Management, HR Policy Development, Compensation & Benefits, Labor Law, HR Data Analysis, and Payroll Management, history in Retail, Facility Management Services, Building Products, Hospitality, and Digital Banking.
+            </p>
+            <p className="text-muted-foreground">
+              Also, run all activities related to People Experience Journey to add value to overall business objectives, Maintaining HR Operations and Enhancing Employee Experience.
             </p>
           </div>
         </div>
