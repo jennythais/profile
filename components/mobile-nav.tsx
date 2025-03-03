@@ -7,9 +7,11 @@ import Link from "next/link"
 import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { usePathname } from "next/navigation"
 
 export function MobileNav() {
   const [open, setOpen] = useState(false)
+
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
@@ -26,9 +28,6 @@ export function MobileNav() {
           </MobileNavLink>
           <MobileNavLink href="/about" onNavigate={() => setOpen(false)}>
             About
-          </MobileNavLink>
-          <MobileNavLink href="/skills" onNavigate={() => setOpen(false)}>
-            Skills
           </MobileNavLink>
           <MobileNavLink href="/experience" onNavigate={() => setOpen(false)}>
             Experience
@@ -51,11 +50,13 @@ function MobileNavLink({
   children: React.ReactNode
   onNavigate: () => void
 }) {
+  const pathname = usePathname()
+  const isActive = (href: string) => pathname === href
   return (
     <Link
       href={href}
       onClick={onNavigate}
-      className="flex items-center py-2 text-lg font-medium transition-colors hover:text-primary"
+      className={`flex items-center py-2 text-lg font-medium transition-colors hover:text-primary ${isActive(href) ? "underline underline-offset-4" : ""}`}
     >
       {children}
     </Link>
