@@ -1,211 +1,329 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-type Experience = {
-  title: string
-  company: string
-  date: string
-  description: {
-    subtitle?: string
-    content: string[]
-  }[]
-}
-const experiences: Experience[] = [
-  {
-    title: "HR Operations Management",
-    company: "Timo Digital Bank",
-    date: 'Feb 2021 - Jul 2024',
-    description: [
-      {
-        subtitle: 'Overseeing HR Operations',
-        content: [
-          'Ensure smooth HR operations by primarily overseeing the full cycle of Compensation & Benefits, including managing payroll for over 200 employees across various legal entities,resolving issues, and fostering strong employee relations.',
-          'Manage the employee database; labor contract, transfers, and promotions.',
-          'Performance management handling and conducting.',
-          'Key member of the team implementing HR systems',
-          'Participate in budgeting, projecting, and controlling costs annually',
-          'Details/ Overview salary report',
-          'Revise and develop C&B policies; be hands-on with title restructuring initiatives.',
-          'Labor report according to Government Offices (Tax; SHUI; ...)',
-          'Collaborate closely with the Finance team and HR at our partner, BVBank, to ensure timely salary payments for all employees',
-          'Act as a consultant with expertise in Employee Relations, Personal Income Tax (PIT), social Insurance, and related areas',
-          'Act as the risk champion for the HR team, primarily collaborating with the Risk & Compliance team on risk management and issue updates',
-          'Serve as the PIC in internal and external audits. Collaborate with stakeholders to resolve issues.',
-          'Ensure operations (daily activities; purchasing; policy and cost-related tasks).',
-          'Act as a consultant to establish and define a Trade Union from the beginning and work well with Trade Union Department District 03 & control the Trade Union budget.',
-        ]
-      },
-      {
-        subtitle: 'Team Management',
-        content: [
-          "Facilitate Learning & Development within the team through quarterly sharing sessions to update on laws, market trends, etc.",
-          "Maintain the team's happiness score above the baseline standard, always keeping it at a high level.",
-          "Maintain the highest level of communication within the team through weekly updates and bi - monthly catch-ups for mutual feedback.",
-          "Data Materials for Retrospective Meetings.",
-        ]
-      },
-    ]
-  },
-  {
-    title: "Enhancing Employee Experience",
-    company: "Timo Digital Bank",
-    date: 'Feb 2021 - Jul 2024',
-    description: [
-      {
-        subtitle: 'Enhancing Employee Experience',
-        content: [
-          'Fosterting employee engagement and efficiency through experience projects.',
-          "Reduce barriers for employees in meeting government requirements and provide comprehensive Compensation & Benefits information through sharing such as “Investing in Employee well - being(PIT instructions)”; “Unlocking ESOP Privilege”; “Unlimited Leave”;",
-          'Project leader for the Staff Loans initiative in collaboration with Standard Chartered Bank, responsible for delivering value to employees; work closely with the Standard Chartered team to kick off the programs; ',
-          'Develop a visualized Employee Handbook to guide employees in focusing on essential information throughout their journey, from onboarding to offboarding;',
-          'Digitalization all aspects of C&B;',
-          'Act as a Business Partner, collaborating with the Head of Department on HR issues, compliance, and benefits; advising on resolving negotiations, addressing issues, and helping their team work efficiently through policy development and ensuring adherence.',
-        ]
-      },
-      {
-        subtitle: 'Team Collaboration - Cross-Functional Roles',
-        content: [
-          "Build the Next Gen Profiles and give an advice to Leadership the potential employees for next level; ",
-          "Participate in various Employee Experience Projects (Define Potential Issues; How we work; LifeatTimo;) ",
-          "Work closely with External Service team (Talent Acquisition; Event; Communications) for enhancing employee satisfaction through organized activities such as the Year - End Party, team - building events, Monthly Sharing Sessions, Town Hall Meetings, and Fireside Chats.",
-        ]
-      },
-    ]
-  },
-  {
-    title: "Country C&B Specialist",
-    company: "OYO Technology & Hospitality",
-    date: 'Sep 2019 - Feb 2021',
-    description: [
-      {
-        subtitle: 'HR Operations',
-        content: [
-          'Serve as the PIC in country Compensation & Benefit management, collaborating with the payroll vendor and internal teams: HoDs, local finance and central team to maintain accuracy and ensure smooth operations.',
-          "Actively resolve employee issues and provide valuable insights.",
-          'Make and analyze the salary cost report; work directly with HRD, and HRM about the benefit policies and the labor cost in the labor market.',
-          'Manage documentation of HR, main in-charge of internal systems including Happay, HReasily, POSH & CoC, and Amber.',
-          'Collaborated with the Talent team on the onboarding process.',
-          'Oversaw HR operations and managed employee relations during the transition process from Vietnam to Thailand.',
-        ]
-      },
-      {
-        subtitle: 'HR Project Management',
-        content: [
-          "Participate in optimizing projects during the COVID-19 situation with the global project management team.",
-          "Consult and update regularly on labor market trends and labor laws, assisting HRD and work closely with the leadership team in fostering positive relationships between the business and employees. ",
-          "Manage the off-boarding process and support employees smoothly.",
-          "Cost projection to define and allocate the best arrangement for the company budget.",
-        ]
-      },
-      {
-        subtitle: 'Trade Union and Supports',
-        content: [
-          "Mainly handle Trade Union establish processing from end to end and work well with Trade Union Department District 01 and control the Trade Union budget",
-          "Support HR activities (Company trip, Health check, EB,...)",
-        ]
-      },
-    ]
-  },
-  {
-    title: "HR Executive (For Retails business)",
-    company: "SCG Viet Nam",
-    date: 'Jul 2019 - Sep 2019',
-    description: [
-      {
-        content: [
-          'Manage all HR activities of Retails Business, such as set-up company regulations,...',
-          "Propose and execute recruitment strategies with support from HR Advisor in charge of HR Shared Services; ",
-          'Collaborate effectively with job placement centers and local authorities during the beginning phase of the new business',
-          'Recruited new employees through multiple channels, including job postings, and managed CV screening(for group companies as part of shared service support).',
-          'Probation & Labor Contracts; SHUI management.',
-          'Create new activities for employee relation and a happy workplace.',
-          'Take care employees by visiting to Nha Trang, Da Nang, Can Tho, and Ha Noi and support from Ho Chi Minh.',
-        ]
-      },
-    ]
-  },
-  {
-    title: "C&B Officer",
-    company: "Aeon Delight (Viet Nam) ",
-    date: 'Sep 2016 - Jul 2019',
-    description: [
-      {
-        subtitle: 'Compensation & Benefits Management',
-        content: [
-          'Work closely with the Site Manager and Supervisor regarding the roster and working hours, Overtime, ....',
-          "Mainly handle SHUI and related issues: Manage SHUI for over 500 headcounts, including blue-collar staff, with rapidly changing turnover.",
-          'Collaborate with the C&B Manager on PIT finalization and expat tax-related matters.',
-          'Serve as the PIC in internal and external audits. Collaborate with stakeholders to resolve issues.',
-          'Mainly handle Insurances (compulsory & health).',
-        ]
-      },
-      {
-        subtitle: 'Labor Contract & Employee Database',
-        content: [
-          'Manage labor contracts, including probationary agreements, renewals, promotions, and changes.',
-          'Manage employee database by HR system (VN resouce)',
-        ]
-      },
-      {
-        subtitle: 'HR System Project',
-        content: ['Participated in HR projects and collaborated directly with the System Team (VN Resource).']
-      },
-      {
-        subtitle: 'Trade Union',
-        content: ['Support the Trade Union and related reporting.']
-      },
-    ]
-  },
-]
-
+import { TimelineV1 } from "@/components/ui/time-line";
+import Image from "next/image";
+import React from "react";
+import Timeline from '@mui/lab/Timeline';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineDot from '@mui/lab/TimelineDot';
+import { Badge } from "@/components/ui/badge";
 export default function ExperiencePage() {
-  return (
-    <div className="min-h-screen bg-background">
-      <section className="py-10 md:py-16">
-        <div className="container px-4 md:px-6">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center text-[#694a08]">
-            Work Experience
-          </h1>
-
-          <div className="max-w-4xl mx-auto">
-            {
-              experiences?.map((experience, index) => (
-                <Card className="mb-8">
-                  <CardHeader>
-                    <CardTitle>{experience?.title}</CardTitle>
-                    <CardDescription className="text-[16px]">{experience?.company} | {experience?.date}</CardDescription>
-                  </CardHeader>
-                  {
-                    experience?.description?.map((desc, index) => (
-                      desc?.subtitle ? (
-                        <CardContent>
-                          <p className="font-bold underline underline-offset-4 mb-4">{desc?.subtitle}</p>
-                          {
-                            desc?.content?.map((content, index) => (
-                              <ul className="list-disc pl-5 space-y-2">
-                                <li>{content}</li>
-                              </ul>
-                            ))
-                          }
-                        </CardContent>
-                      ) : (
-                        <CardContent>
-                          {
-                            desc?.content?.map((content, index) => (
-                              <ul className="list-disc pl-5 space-y-2">
-                                <li>{content}</li>
-                              </ul>
-                            ))
-                          }
-                        </CardContent>
-                      )
-                    ))
-                  }
-                </Card>
-              ))
-            }
+  const data = [
+    {
+      title: "2025 - Present",
+      content: (
+        <div className="flex gap-4 items-center">
+          <Image
+            src="/yes4all.png"
+            alt="yes4all-company"
+            width={100}
+            height={100}
+            style={{ objectFit: 'contain' }}
+          />
+          <div className="">
+            <p className="text-neutral-800 text-base md:text-xl font-bold mb-2">
+              People Partner | Technology & Innovation
+            </p>
+            <p className="text-muted-foreground  text-sm md:text-lg font-normal ">
+              Yes4All · Full-time
+            </p>
           </div>
         </div>
-      </section>
+      ),
+    },
+    {
+      title: "Feb 2021 - Jul 2024",
+      content: (
+        <div>
+          <div className="flex gap-4 items-center">
+            <Image
+              src="/timo.jpeg"
+              alt="timo-company"
+              width={100}
+              height={100}
+              style={{ objectFit: 'contain' }}
+            />
+            <div className="">
+              <p className="text-neutral-800 text-base md:text-xl font-bold mb-2">
+                Timo Vietnam
+              </p>
+              <p className="text-muted-foreground  text-sm md:text-lg font-normal ">
+                Full-time · 3 yrs 6 mos
+              </p>
+            </div>
+          </div>
+          <div>
+            <Timeline>
+              <TimelineItem>
+                <TimelineSeparator>
+                  <TimelineDot />
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+                  <div>
+                    <p className="font-bold text-[18px]">Assistant Manager - HR Operations and Employee Experience</p>
+                    <p className="text-muted-foreground">Jul 2022 - Jul 2024</p>
+                  </div>
+                  <ul className="leading-7">
+                    <ul>
+                      <p className="font-bold">- Overseeing HR Operations and Employee Engagement:</p>
+                      <li>+ Strategic HR Operations Management: Ensure smooth HR operations by managing the complete Compensation & Benefits (C&B) cycle, addressing issues proactively, and fostering strong employee relations. This includes aligning HR practices with business goals to support overall organizational success.</li>
+                      <li>+ Enhancing Employee Engagement: Drive initiatives that enhance employee engagement and efficiency through experience projects. Regularly assess employee feedback to identify areas for improvement and implement strategies that align with business objectives.</li>
+                      <li>+ Facilitating Compliance and Accessibility: Reduce barriers for employees in meeting government requirements by organizing sharing sessions that provide essential information and resources, ensuring that employees feel supported in navigating compliance.</li>
+                    </ul>
+                    <ul>
+                      <p className="font-bold">- Supporting Team Performance:</p>
+                      <li>+ Collaborate closely with team leaders to promote effective engagement strategies that support team performance. This involves acting as a consultant to managers, helping them understand how to leverage HR practices to meet their specific needs.</li>
+                    </ul>
+                    <li className="font-bold">- Act as a consultant to establish and define a Trade Union from the beginning.</li>
+                    <ul>
+                      <p className="font-bold">- Experience in Collaborating for Talent Development:</p>
+                      <li>+ Peer Learning Initiatives: Designed and facilitated peer-to-peer knowledge-sharing sessions and mentoring programs, enhancing skills and fostering teamwork across departments.</li>
+                      <li>+ Strengthened Workplace Relationships: Developed networking events and team-building activities that improved workplace culture and collaboration, boosting employee morale.</li>
+                      <li>+ Cross-Team Projects: Initiated interdepartmental projects focused on skill enhancement, promoting knowledge exchange and broader understanding of organizational goals.</li>
+                      <li>+ Feedback Culture: Integrated regular feedback mechanisms to enhance employee engagement and performance, training managers on effective feedback delivery.</li>
+                    </ul>
+                  </ul>
+                  <div className="flex gap-2 flex-wrap">
+                    <p className="font-bold">Skills:</p>
+                    {['HR Business Partnering', 'Human Resource Development', 'Employee Relations', 'Employee Engagement', 'Labor Market', 'Cost Reporting', 'Labor and Employment Law', 'Human Resources Information Technology (HRIT)', 'Employee Benefits Design'].map((skill, index) => (
+                      <Badge variant="secondary" className="font-normal text-[13px]">{skill}</Badge>
+                    ))}
+                  </div>
+                </TimelineContent>
+              </TimelineItem>
+              <TimelineItem>
+                <TimelineSeparator>
+                  <TimelineDot />
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+                  <div>
+                    <p className="font-bold text-[18px]">Senior Human Resources Specialist</p>
+                    <p className="text-muted-foreground">Feb 2021 - Jul 2022</p>
+                  </div>
+                  <ul className="leading-7">
+                    <li>- Mainly handle the C&B section, including but not limited to managing the entire C&B cycle from probation to exit.</li>
+                    <li>- Primarily handle PIT finalization and provide consultation on PIT, contracts, and any C&B-related issues</li>
+                    <li>- Serve as the PIC in both internal and external audits, collaborating with various stakeholders to resolve issues.</li>
+                  </ul>
+                  <div className="flex gap-2 flex-wrap">
+                    <p className="font-bold">Skills:</p>
+                    {['HR Consulting', 'Payroll', 'Employee Relations', 'Labor and Employment Law'].map((skill, index) => (
+                      <Badge variant="secondary" className="font-normal text-[13px]">{skill}</Badge>
+                    ))}
+                  </div>
+                </TimelineContent>
+              </TimelineItem>
+            </Timeline>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Sep 2019 - Nov 2020",
+      content: (
+        <div>
+          <div className="flex gap-4 items-center">
+            <Image
+              src="/oyo.png"
+              alt="oyo-company"
+              width={100}
+              height={100}
+              style={{ objectFit: 'contain' }}
+            />
+            <div className="">
+              <p className="text-neutral-800 text-base md:text-xl font-bold mb-2">
+                Country C&B Specialist
+              </p>
+              <p className="text-muted-foreground  text-sm md:text-lg font-normal ">
+                OYO Vietnam · Full-time
+              </p>
+            </div>
+          </div>
+          <div>
+            <ul className="leading-7 mb-4">
+              <li>- Serve as the PIC in country Compensation & Benefit management, collaborating with the payroll vendor to maintain accuracy and ensure smooth operations.</li>
+              <li>- Actively resolve employee issues and provide valuable insights.</li>
+              <li>- Consult and update regularly on labor market trends and labor laws, assisting HRD in fostering positive relationships between the business and employees.</li>
+              <li>- Participate in optimizing projects during the COVID-19 situation with the global project management team.</li>
+            </ul>
+            <div className="flex gap-2 flex-wrap">
+              <p className="font-bold">Skills:</p>
+              {['Labor and Employment Law', 'Project Management', 'Crisis Management', 'Cost Projections', 'HR Operations', 'Human Resources Information Technology (HRIT)'].map((skill, index) => (
+                <Badge variant="secondary" className="font-normal text-[13px]">{skill}</Badge>
+              ))}
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Jul 2019 - Sep 2019",
+      content: (
+        <div>
+          <div className="flex gap-4 items-center">
+            <Image
+              src="/scg.png"
+              alt="scg-company"
+              width={100}
+              height={100}
+              style={{ objectFit: 'contain' }}
+            />
+            <div className="">
+              <p className="text-neutral-800 text-base md:text-xl font-bold mb-2">
+                HR Executive - Retail Business
+              </p>
+              <p className="text-muted-foreground  text-sm md:text-lg font-normal ">
+                SCG · Full-time
+              </p>
+            </div>
+          </div>
+          <div>
+            <ul className="leading-7 mb-4">
+              <li>- Help establish HR facilities for the new business. </li>
+              <li>- Propose and execute recruitment strategies with support from HR Advisor in charge of HR Shared Services.</li>
+              <li>- Collaborate effectively with job placement centers and local authorities during the beginning phase of the new business.</li>
+              <li>- Actively participate in interviews of entities within the shared service group (including packing, logistics, cement, building materials, etc.).</li>
+              <li>- Act as the PIC for university relationships to enhance networking and strengthen employer branding.</li>
+            </ul>
+            <div className="flex gap-2 flex-wrap">
+              <p className="font-bold">Skills:</p>
+              {['Recruiting', 'University Relations', 'Labor and Employment Law', 'Labor Market'].map((skill, index) => (
+                <Badge variant="secondary" className="font-normal text-[13px]">{skill}</Badge>
+              ))}
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Aug 2016 - Jul 2019",
+      content: (
+        <div>
+          <div className="flex gap-4 items-center">
+            <Image
+              src="/aeon.png"
+              alt="aeon-company"
+              width={100}
+              height={100}
+              style={{ objectFit: 'contain' }}
+            />
+            <div className="">
+              <p className="text-neutral-800 text-base md:text-xl font-bold mb-2">
+                AEON Delight Vietnam
+              </p>
+              <p className="text-muted-foreground  text-sm md:text-lg font-normal ">
+                Full-time · 3 yrs
+              </p>
+            </div>
+          </div>
+          <div>
+            <Timeline>
+              <TimelineItem>
+                <TimelineSeparator>
+                  <TimelineDot />
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+                  <div>
+                    <p className="font-bold text-[18px]">HR Officer</p>
+                    <p className="text-muted-foreground">Aug 2017 - Jul 2019</p>
+                  </div>
+                  <ul className="leading-7">
+                    <li>- Work closely with the Site Manager and Supervisor regarding the roster and working hours, Overtime,....</li>
+                    <li>- Mainly handle SHUI and related issues: Manage SHUI for over 500 headcounts, including blue-collar staff, with rapidly changing turnover.</li>
+                    <li>- Manage labor contracts, including probationary agreements, renewals, promotions, and changes.</li>
+                    <li>- Collaborate with the C&B Manager on PIT finalization and expat tax-related matters</li>
+                    <li>- Serve as the PIC in internal and external audits. Collaborate with stakeholders to resolve issues.</li>
+                    <li>- Support the Trade Union and related reporting.</li>
+                  </ul>
+                  <div className="flex gap-2 flex-wrap">
+                    <p className="font-bold">Skills:</p>
+                    {['Labor and Employment Law', 'Employee Relations', 'Government Relations', 'Payroll Management', 'HR System', 'Human Resources Information Technology (HRIT)'].map((skill, index) => (
+                      <Badge variant="secondary" className="font-normal text-[13px]">{skill}</Badge>
+                    ))}
+                  </div>
+                </TimelineContent>
+              </TimelineItem>
+              <TimelineItem>
+                <TimelineSeparator>
+                  <TimelineDot />
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+                  <div>
+                    <p className="font-bold text-[18px]">HR Assistant</p>
+                    <p className="text-muted-foreground">Aug 2016 - Aug 2017</p>
+                  </div>
+                  <ul className="leading-7">
+                    <li>- Manage time attendance and roster: Actively monitor and collaborate with site management in the Operations Department across all sites</li>
+                    <li>- Mainly handle SHUI and related issues: Manage SHUI for over 400 headcounts, including blue-collar staff, with rapidly changing turnover.</li>
+                    <li>- Assist the C&B Manager with PIT finalization and expat tax-related matters.</li>
+                    <li>- Support the Trade Union and related reporting.</li>
+                  </ul>
+                  <div className="flex gap-2 flex-wrap">
+                    <p className="font-bold">Skills:</p>
+                    {['Labor Law', 'SHUI', 'Employee Relations', 'Time Attendant'].map((skill, index) => (
+                      <Badge variant="secondary" className="font-normal text-[13px]">{skill}</Badge>
+                    ))}
+                  </div>
+                </TimelineContent>
+              </TimelineItem>
+            </Timeline>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Feb 2016 - Jun 2016",
+      content: (
+        <div className="flex gap-4 items-center">
+          <Image
+            src="/bigc.png"
+            alt="bigc-company"
+            width={100}
+            height={100}
+            style={{ objectFit: 'contain' }}
+          />
+          <div className="">
+            <p className="text-neutral-800 text-base md:text-xl font-bold mb-2">
+              Human Resources Trainee - Head Office
+            </p>
+            <p className="text-muted-foreground  text-sm md:text-lg font-normal ">
+              Big C Vietnam · Internship
+            </p>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Apr 2015 - Sep 2015",
+      content: (
+        <div className="flex gap-4 items-center">
+          <Image
+            src="/pnj.png"
+            alt="pnj-company"
+            width={100}
+            height={100}
+            style={{ objectFit: 'contain' }}
+          />
+          <div className="">
+            <p className="text-neutral-800 text-base md:text-xl font-bold mb-2">
+              Human Resources Intern
+            </p>
+            <p className="text-muted-foreground  text-sm md:text-lg font-normal ">
+              PNJ · Internship
+            </p>
+          </div>
+        </div>
+      ),
+    },
+  ];
+  return (
+    <div className="w-full">
+      <TimelineV1 data={data} />
     </div>
-  )
+  );
 }
-

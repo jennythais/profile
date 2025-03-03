@@ -66,7 +66,7 @@ export default function AboutPage() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="mb-8">
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <Users className="mr-2 h-5 w-5" />
@@ -108,7 +108,7 @@ export default function AboutPage() {
       <section className="py-10 md:py-16 bg-white">
         <div className="container px-4 md:px-6">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center text-[#694a08]">Education</h2>
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <Card className="mb-8">
               <CardHeader>
                 <CardTitle>Business administration</CardTitle>
@@ -184,7 +184,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section >
-
     </div >
   )
 }
