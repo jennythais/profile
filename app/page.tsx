@@ -26,7 +26,7 @@ export default function Home() {
             </p>
             <div className="flex space-x-4 mt-6 animate-fade-in-up animation-delay-600">
               <div className="contact__phone">
-                <a href="tel:+84339759574" className="text-center transition-colors">
+                <a href="tel:+84359252599" className="text-center transition-colors">
                   <PhoneIcon />
                 </a>
               </div>
